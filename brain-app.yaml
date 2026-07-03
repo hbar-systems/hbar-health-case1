@@ -27,6 +27,8 @@ author:
   url: https://hbar.systems
   contact: hello@hbar.systems
 
+repo: https://github.com/hbar-systems/hbar-health-case1
+
 tab:
   label: CASE 1
   route: /case1
