@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# dist/ is intentionally NOT ignored — it is the brain-app ui_bundle the
+# install pipeline clones and serves. Rebuild with `npm run build`.

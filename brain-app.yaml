@@ -1,0 +1,43 @@
+# hbar.health — CASE 1 (Lernwerkzeug) — brain-app manifest
+#
+# A standalone EDUCATIONAL clinical-reasoning tree on synthetic teaching cases:
+# organ system -> syndrome -> pathogen -> therapy (bug -> drug). The "look what's
+# possible" inspiration piece for a clinic head.
+#
+# HARD BOUNDARY (config brief §4.6): this is a study tool, NOT for patient care.
+# It has ZERO access to the patient corpus, calls no model, reads no brain data,
+# and must never emit a real patient's diagnosis. It carries a permanent
+# "Lernwerkzeug — nicht für die Patientenversorgung" banner and is architected to
+# lift out cleanly (own repo, no permissions, no endpoints) so it can be removed
+# without touching anything else — this separation is a legal requirement
+# (Zweckbestimmung / device-classification), not a style choice.
+#
+# Schema: registry/schema/brain/app.schema.json (in hbar.world)
+# Created: 2026-07-02
+
+dialect: brain-app/v1
+id: hbar-health-case1
+name: CASE 1
+version: 0.1.0
+description: Lernwerkzeug — interaktiver klinischer Denkbaum an synthetischen Lehrfällen (Organsystem → Syndrom → Erreger → Therapie). Ausdrücklich nicht für die Patientenversorgung; keine Verbindung zu Patientendaten.
+license: AGPL-3.0
+
+author:
+  name: hbar
+  url: https://hbar.systems
+  contact: hello@hbar.systems
+
+tab:
+  label: CASE 1
+  route: /case1
+  order: 40
+
+entries:
+  ui_bundle: dist/
+
+# No permissions, no endpoints, no model — a self-contained study tool. This
+# emptiness is intentional and load-bearing: it keeps CASE 1 outside anything
+# that could read patient data or produce a clinical decision.
+
+engines:
+  brainfoundry-nous: ">=0.8.4"
