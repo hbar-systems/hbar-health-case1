@@ -18,7 +18,7 @@
 dialect: brain-app/v1
 id: hbar-health-case1
 name: CASE 1
-version: 0.1.0
+version: 0.1.1
 description: Lernwerkzeug — interaktiver klinischer Denkbaum an synthetischen Lehrfällen (Organsystem → Syndrom → Erreger → Therapie). Ausdrücklich nicht für die Patientenversorgung; keine Verbindung zu Patientendaten.
 license: AGPL-3.0
 
